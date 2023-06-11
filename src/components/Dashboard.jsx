@@ -36,6 +36,11 @@ const Dashboard = ({ userName }) => {
               <h5 className="card-title">Navigation</h5>
               <ul className="list-group">
                 <li className="list-group-item">
+                  <Link to="/profile" className="nav-link">
+                    Profile
+                  </Link>
+                </li>
+                <li className="list-group-item">
                   <Link to="/courses" className="nav-link">
                     Courses
                   </Link>
@@ -46,18 +51,13 @@ const Dashboard = ({ userName }) => {
                   </Link>
                 </li>
                 <li className="list-group-item">
-                  <Link to="/calendar" className="nav-link">
-                    Calendar
+                  <Link to="/timetable" className="nav-link">
+                    Timetable
                   </Link>
                 </li>
                 <li className="list-group-item">
                   <Link to="/messages" className="nav-link">
                     Messages
-                  </Link>
-                </li>
-                <li className="list-group-item">
-                  <Link to="/profile" className="nav-link">
-                    Profile
                   </Link>
                 </li>
               </ul>

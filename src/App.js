@@ -10,6 +10,7 @@ import ForgotPasswordPage from './components/ForgotPasswordPage';
 import CoursePage from './components/CoursesPage';
 import AssignmentPage from './components/AssignmentsPage';
 import GradePage from './components/GradePage';
+import TimetablePage from './components/TimetablePage';
 
 function App (){
   return (
@@ -24,6 +25,7 @@ function App (){
       <Route path="/courses" Component={CoursePage}/>
       <Route path='/assignments' Component={AssignmentPage}/>
       <Route path='/grades' Component={GradePage}/>
+      <Route path='/timetable' Component={TimetablePage}/>
     </Routes>
   );
 };
