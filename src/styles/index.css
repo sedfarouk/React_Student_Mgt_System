@@ -1,0 +1,14 @@
+nav{
+    background-color: #e3f2fd;
+}
+
+footer{
+    background-color: #e3f2fd;
+}
+
+.index{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
