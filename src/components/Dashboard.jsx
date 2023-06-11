@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const Dashboard = () => {
+const Dashboard = ({ userName }) => {
   const [profilePicture, setProfilePicture] = useState(null);
 
   const handleProfilePictureChange = (e) => {
@@ -23,18 +23,43 @@ const Dashboard = () => {
                   <p>No profile picture</p>
                 </div>
               )}
-              <input type="file" className="form-control" onChange={handleProfilePictureChange} accept="image/*" />
+              <input
+                type="file"
+                className="form-control"
+                onChange={handleProfilePictureChange}
+                accept="image/*"
+              />
             </div>
-        </div>
+          </div>
           <div className="card mb-4">
             <div className="card-body">
               <h5 className="card-title">Navigation</h5>
               <ul className="list-group">
-                <li className="list-group-item">Courses</li>
-                <li className="list-group-item">Grades</li>
-                <li className="list-group-item">Calendar</li>
-                <li className="list-group-item">Messages</li>
-                <li className="list-group-item"><Link to="/profile" className='nav-link'>Profile</Link></li>
+                <li className="list-group-item">
+                  <Link to="/courses" className="nav-link">
+                    Courses
+                  </Link>
+                </li>
+                <li className="list-group-item">
+                  <Link to="/grades" className="nav-link">
+                    Grades
+                  </Link>
+                </li>
+                <li className="list-group-item">
+                  <Link to="/calendar" className="nav-link">
+                    Calendar
+                  </Link>
+                </li>
+                <li className="list-group-item">
+                  <Link to="/messages" className="nav-link">
+                    Messages
+                  </Link>
+                </li>
+                <li className="list-group-item">
+                  <Link to="/profile" className="nav-link">
+                    Profile
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -42,7 +67,7 @@ const Dashboard = () => {
         <div className="col-lg-9">
           <div className="card mb-4">
             <div className="card-body">
-              <h5 className="card-title">Welcome, Farouk Sedick</h5>
+              <h5 className="card-title">Welcome, {userName="Farouk Sedick"}</h5>
               <p className="card-text">Below are the statistics and progress report of your academic studies.</p>
             </div>
           </div>

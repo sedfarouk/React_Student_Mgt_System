@@ -6,6 +6,7 @@ import DashboardPage from './components/Dashboard';
 import StudentInfoPage from './components/StudentInfoForm';
 import HomePage from './components/HomePage';
 import AboutPage from './components/About';
+import ForgotPasswordPage from './components/ForgotPasswordPage';
 
 function App (){
   return (
@@ -16,6 +17,7 @@ function App (){
       <Route path="/dashboard" Component={DashboardPage}/>
       <Route path="/profile" Component={StudentInfoPage}/>
       <Route path="/about" Component={AboutPage}/>
+      <Route path="/login/resetpassword" Component={ForgotPasswordPage}/>
     </Routes>
   );
 };

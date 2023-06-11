@@ -40,7 +40,7 @@ export default function LoginForm () {
                 </form>
                 <div class="text-center mt-3">
                   <p>Don't have an account? <Link to="/register">Sign Up</Link></p>
-                  <p><a href="forgot-password.html" onClick={handlePasswordChange}>Forgot your password?</a></p>
+                  <p><Link to="/login/resetpassword" onClick={handlePasswordChange}>Forgot your password?</Link></p>
                 </div>
               </div>
             </div>
