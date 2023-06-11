@@ -25,19 +25,19 @@ export default function HomePage(){
                 <div class="container">
                     <div class="row">
                     <div class="col-md-4">
-                        <Link to="/" className='nav-link'><div class="feature text-center">
+                        <Link to="/courses" className='nav-link'><div class="feature text-center">
                         <h3>Courses</h3>
                         <p>Click to check the info about the courses you are taking this semester. </p>
                         </div></Link>
                     </div>
                     <div class="col-md-4">
-                        <Link to="/" className='nav-link'><div class="feature text-center">
+                        <Link to="/assignments" className='nav-link'><div class="feature text-center">
                         <h3>Assignments</h3>
                         <p>Click to check past and due assignments.</p>
                         </div></Link>
                     </div>
                     <div class="col-md-4">
-                        <Link to="/" className='nav-link'><div class="feature text-center">
+                        <Link to="/grades" className='nav-link'><div class="feature text-center">
                         <i class="bi bi-graph-up"></i>
                         <h3>Grades and Performance</h3>
                         <p>Click to check your academic performance.</p>
