@@ -19,7 +19,7 @@ export default function Footer(){
                     <h4>Follow Me</h4>
                     <ul >
                     <li><a href="www.linkedin.com/in/farouk-sedick">LinkedIn</a></li>
-                    <li><a href='https://github.com/far9999'>Github</a></li>
+                    <li><a href='https://github.com/FaroukDev-tech'>Github</a></li>
                     </ul>
                 </div>
                 </div>
