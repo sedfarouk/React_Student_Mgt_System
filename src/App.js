@@ -15,7 +15,7 @@ import TimetablePage from './components/TimetablePage';
 function App (){
   return (
     <Routes>
-      <Route path="/" Component={HomePage}/>
+      <Route path="/home" Component={HomePage}/>
       <Route path="login" Component={LoginPage}/>
       <Route path="register" Component={RegistrationPage}/>
       <Route path="/dashboard" Component={DashboardPage}/>
