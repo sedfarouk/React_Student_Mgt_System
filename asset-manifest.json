@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React_Student_Mgt_System/static/css/main.9bd48bdf.css",
-    "main.js": "/React_Student_Mgt_System/static/js/main.8acf9c90.js",
+    "main.js": "/React_Student_Mgt_System/static/js/main.69dd8de1.js",
     "static/media/soft_eng.jpeg": "/React_Student_Mgt_System/static/media/soft_eng.33c52dd44899c41a3aa7.jpeg",
     "static/media/dsa.jpg": "/React_Student_Mgt_System/static/media/dsa.a19bf9a275b4a81c2e58.jpg",
     "static/media/ug.jpg": "/React_Student_Mgt_System/static/media/ug.865c56207234fe61706a.jpg",
@@ -10,10 +10,10 @@
     "static/media/UGLogo.svg": "/React_Student_Mgt_System/static/media/UGLogo.e67150a2c2b4f272b24c3285df8c0046.svg",
     "index.html": "/React_Student_Mgt_System/index.html",
     "main.9bd48bdf.css.map": "/React_Student_Mgt_System/static/css/main.9bd48bdf.css.map",
-    "main.8acf9c90.js.map": "/React_Student_Mgt_System/static/js/main.8acf9c90.js.map"
+    "main.69dd8de1.js.map": "/React_Student_Mgt_System/static/js/main.69dd8de1.js.map"
   },
   "entrypoints": [
     "static/css/main.9bd48bdf.css",
-    "static/js/main.8acf9c90.js"
+    "static/js/main.69dd8de1.js"
   ]
 }
