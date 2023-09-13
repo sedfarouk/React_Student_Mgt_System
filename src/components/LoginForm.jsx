@@ -46,10 +46,10 @@ export default function LoginForm() {
           <div className="col-md-6">
             <div className="card">
               <div className="card-body">
-                <div className="text-center mb-4">
+                <div className="text-center">
                   <img src={ugLogo} alt="Logo" className="logo-img" width="200" height="200" />
                 </div>
-                <h2 className="card-title mb-4">Login</h2>
+                <h2 className="card-title mb-4 text-center">Login</h2>
                 <form onSubmit={handleSubmit}>
                   <div className="mb-3">
                     <label htmlFor="email" className="form-label">
