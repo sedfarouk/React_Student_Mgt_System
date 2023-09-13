@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/react_student_mgt_system/static/css/main.cb752035.css",
-    "main.js": "/react_student_mgt_system/static/js/main.097d5b28.js",
-    "static/media/soft_eng.jpeg": "/react_student_mgt_system/static/media/soft_eng.33c52dd44899c41a3aa7.jpeg",
-    "static/media/dsa.jpg": "/react_student_mgt_system/static/media/dsa.a19bf9a275b4a81c2e58.jpg",
-    "static/media/ug.jpg": "/react_student_mgt_system/static/media/ug.865c56207234fe61706a.jpg",
-    "static/media/ugcheck.jpg": "/react_student_mgt_system/static/media/ugcheck.fb48a0be0d7000e7b2e2.jpg",
-    "static/media/linear_circuits.jpeg": "/react_student_mgt_system/static/media/linear_circuits.0a72736891973e932835.jpeg",
-    "static/media/UGLogo.svg": "/react_student_mgt_system/static/media/UGLogo.e67150a2c2b4f272b24c3285df8c0046.svg",
-    "index.html": "/react_student_mgt_system/index.html",
-    "main.cb752035.css.map": "/react_student_mgt_system/static/css/main.cb752035.css.map",
-    "main.097d5b28.js.map": "/react_student_mgt_system/static/js/main.097d5b28.js.map"
+    "main.css": "./static/css/main.cb752035.css",
+    "main.js": "./static/js/main.5fa11425.js",
+    "static/media/soft_eng.jpeg": "./static/media/soft_eng.33c52dd44899c41a3aa7.jpeg",
+    "static/media/dsa.jpg": "./static/media/dsa.a19bf9a275b4a81c2e58.jpg",
+    "static/media/ug.jpg": "./static/media/ug.865c56207234fe61706a.jpg",
+    "static/media/ugcheck.jpg": "./static/media/ugcheck.fb48a0be0d7000e7b2e2.jpg",
+    "static/media/linear_circuits.jpeg": "./static/media/linear_circuits.0a72736891973e932835.jpeg",
+    "static/media/UGLogo.svg": "./static/media/UGLogo.e67150a2c2b4f272b24c3285df8c0046.svg",
+    "index.html": "./index.html",
+    "main.cb752035.css.map": "./static/css/main.cb752035.css.map",
+    "main.5fa11425.js.map": "./static/js/main.5fa11425.js.map"
   },
   "entrypoints": [
     "static/css/main.cb752035.css",
-    "static/js/main.097d5b28.js"
+    "static/js/main.5fa11425.js"
   ]
 }
