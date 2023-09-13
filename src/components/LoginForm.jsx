@@ -2,45 +2,97 @@ import React, { useState } from 'react';
 import ugLogo from '../images/UGLogo.svg';
 import { Link } from 'react-router-dom';
 
-export default function LoginForm () {
-  const [email] = useState('');
+export default function LoginForm() {
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
 
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
+    try {
+      const response = await fetch('YOUR_LOGIN_API_URL', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password }),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        setErrorMessage(errorData.message);
+      } else {
+        window.location.href = '/dashboard';
+      }
+    } catch (error) {
+      console.error('Login Error:', error);
+      setErrorMessage('An error occurred during login. Please try again later.');
+    }
   };
 
-  return(
+  return (
     <main>
-      <div class="container-sm">
-        <div class="row justify-content-center align-items-center vh-100">
-          <div class="col-md-6">
-            <div class="card">
-              <div class="card-body">
-                <div class="text-center mb-4">
-                  <img src={ugLogo} alt="Logo" class="logo-img" width="200" height="200"/>
+      <div className="container-sm">
+        <div className="row justify-content-center align-items-center vh-100">
+          <div className="col-md-6">
+            <div className="card">
+              <div className="card-body">
+                <div className="text-center mb-4">
+                  <img src={ugLogo} alt="Logo" className="logo-img" width="200" height="200" />
                 </div>
-                <h2 class="card-title mb-4">Login</h2>
+                <h2 className="card-title mb-4">Login</h2>
                 <form onSubmit={handleSubmit}>
-                  <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email" value={email}/>
+                  <div className="mb-3">
+                    <label htmlFor="email" className="form-label">
+                      Email
+                    </label>
+                    <input
+                      type="email"
+                      className="form-control"
+                      id="email"
+                      placeholder="Enter your email"
+                      value={email}
+                      onChange={handleEmailChange}
+                    />
                   </div>
-                  <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Enter your password" value={password}/>
+                  <div className="mb-3">
+                    <label htmlFor="password" className="form-label">
+                      Password
+                    </label>
+                    <input
+                      type="password"
+                      className="form-control"
+                      id="password"
+                      placeholder="Enter your password"
+                      value={password}
+                      onChange={handlePasswordChange}
+                    />
                   </div>
-                  <div class="d-grid gap-2">
-                    <button type="submit" class="btn btn-primary">Login</button>
+                  <div className="d-grid gap-2">
+                    <button type="submit" className="btn btn-primary">
+                      Login
+                    </button>
                   </div>
                 </form>
-                <div class="text-center mt-3">
-                  <p>Don't have an account? <Link to="/register">Sign Up</Link></p>
-                  <p><Link to="/login/resetpassword" onClick={handlePasswordChange}>Forgot your password?</Link></p>
+                {errorMessage && <div className="alert alert-danger mt-3">{errorMessage}</div>}
+                <div className="text-center mt-3">
+                  <p>
+                    Don't have an account? <Link to="/register">Sign Up</Link>
+                  </p>
+                  <p>
+                    <Link to="/login/resetpassword" onClick={handlePasswordChange}>
+                      Forgot your password?
+                    </Link>
+                  </p>
                 </div>
               </div>
             </div>
@@ -48,6 +100,5 @@ export default function LoginForm () {
         </div>
       </div>
     </main>
-  )
-};
-
+  );
+}
