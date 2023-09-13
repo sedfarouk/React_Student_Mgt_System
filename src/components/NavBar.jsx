@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export default function NavBar(){
     return(
         <header>
-        <nav className="navbar navbar-expand-lg navbar-light">
+        <nav className="navbar navbar-expand-lg navbar-light mb-4">
             <div className="container-fluid">
             <Link to="/" className="nav-link"><div className="navbar-brand mb-0 h1"><img src={ugLogo} alt="" width="70" height="34" className="d-inline-block align-text-top"/>
             UG Student Management system</div></Link>

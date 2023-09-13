@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import './styles/index.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
@@ -10,12 +11,12 @@ import { BrowserRouter } from 'react-router-dom';
 
 
 ReactDOM.render(
-  <div className="d-flex flex-column">
-    <BrowserRouter>
-      <NavBar/>
-      <App />
-      <Footer/>
-    </BrowserRouter>
-  </div>,
+    <div className="d-flex flex-column">
+      <BrowserRouter>
+        <NavBar/>
+        <App />
+        <Footer/>
+      </BrowserRouter>
+    </div>,
   document.getElementById('root')
 );
